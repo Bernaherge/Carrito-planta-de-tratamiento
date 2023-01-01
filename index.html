@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras de insumos</title>
+  <!-- Estilos CSS -->
+  <style>
+    /* Estilos para el carrito de compras */
+    .carrito {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+    .item .info {
+      text-align: center;
+      margin: 10px;
+    }
+    .item .info h3 {
+      margin: 0;
+    }
+    .item .info p {
+      margin: 5px 0;
+    }
+    .item .anadir {
+      display: block;
+      margin: 10px auto;
+      padding: 5px 10px;
+      background: #0080ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .item .anadir:hover {
+      background: #0066cc;
+    }
+    /* Estilos para el formulario de pago */
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin: 20px auto;
+    }
+    .formulario label {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .formulario input {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .formulario .total {
+      margin: 20px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .formulario .procesar {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #0080ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .formulario .procesar:hover {
+      background: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor para el carrito de compras -->
+  <div id="carrito" class="carrito"></div>
+  <!-- Formulario para procesar el pago -->
+  <form class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+    <label for="tarjeta">Número de tarjeta:</label>
+    <input type="text" id="tarjeta" required>
+    <label for="mes">Mes de vencimiento:</label>
+    <input type="text" id="mes" required>
+    <label for="anio">Año de vencimiento:</label>
+    <input type="text" id="anio" required>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" required>
+    <div class="total">Total: $<span id="total">0</span></div>
+    <button id="procesar-pago" class="procesar">Procesar pago</button>
+  </form>
+
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+

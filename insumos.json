@@ -1,0 +1,6 @@
+[  
+    {    "nombre": "Nutrientes por 30 litros",    "precio": "10000",    "imagen": "ruta/a/la/imagen.jpg",    "stock": "10"  },
+    {    "nombre": "Regulador de pH por 30 litros",    "precio": "12000",    "imagen": "ruta/a/la/imagen.jpg",    "stock": "22"  },
+    {    "nombre": "Bombas dosificadoras",    "precio": "35000",    "imagen": "ruta/a/la/imagen.jpg",    "stock": "22"  },
+    {    "nombre": "Antiespumante por 20 litros",    "precio": "15000",    "imagen": "ruta/a/la/imagen.jpg",    "stock": "30"  }
+]
